@@ -17,7 +17,15 @@ pipeline{
                 sh "python3 sub.py"
             }
         }
-        stage("test2 br"){
+        stage("test"){
+            when{
+                branch 'test'
+            }
+            steps{
+                echo "this is test br."
+            }
+        } 
+        stage("test2"){
             when{
                 branch 'test2'
             }
