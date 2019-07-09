@@ -10,11 +10,12 @@ pipeline{
             steps{
                 sh "python3 sub.py"
             }
+        }
         stage("test2"){
             steps{
                 echo "okayy"
             }
         }
-        }
     }
 }
+
