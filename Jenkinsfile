@@ -30,10 +30,17 @@ pipeline{
                 branch 'test2'
             }
             steps{
-                echo 'this is test2'
+                echo 'this is test2 branch'
             }
-        } 
-    
+        }
+        stage("test3"){
+            when{
+                branch 'test3'
+            }
+            steps{
+                echo 'this is final testing branch'
+            }
+        }
     }
 }
 
