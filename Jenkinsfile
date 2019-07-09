@@ -30,7 +30,7 @@ pipeline{
                 branch 'test2'
             }
             steps{
-                echo 'this is test2'
+                echo 'this is test2 branch'
             }
         } 
     
