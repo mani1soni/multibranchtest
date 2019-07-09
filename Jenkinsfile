@@ -17,7 +17,7 @@ pipeline{
                 sh "python3 sub.py"
             }
         }
-        satge("test2 br"){
+        stage("test2 br"){
             when{
                 branch 'test2'
             }
